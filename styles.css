@@ -1,17 +1,20 @@
+
 .game {
     width: 600px;
     height: 200px;
     border: 1px solid black;
-    margin: auto;
     position: relative;
-  }
+    margin: 3% 30% 0 30% ;
+}
+
 .game2{ 
   width: 600px;
   height: 200px;
   border: 1px solid black;
-  margin: 200px 460px 0px 460px;
   position: relative;
-  }
+  margin: 15% 30% 0 30%;
+}
+
 
 #dino {
     width: 50px;
@@ -69,9 +72,6 @@
     /* animation: block 100s infinite linear; */
   }
 
-.create {
-    animation: block 1s linear;
-  }
   
 #cactus2 {
     width: 20px;
@@ -85,10 +85,18 @@
   
     /* animation: block 100s infinite linear; */
   }
+.create {
+    animation: block 1s linear;
+}
 
 .create2 {
     animation: block 5s linear;
-  }
+}
+
+.create3 {
+    animation: block 2.5s linear;
+}
+
 
 @keyframes block {
     0% {
@@ -99,3 +107,4 @@
       left: 10px;
     }
   }
+

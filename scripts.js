@@ -1,6 +1,7 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 const cactus2 = document.getElementById("cactus2");
+const cactus3 = document.getElementById("cactus3");
 
 function jump() {
   if (dino.classList != "jump") {
@@ -32,6 +33,16 @@ function create2() {
     }, 5000);
   }
 }
+
+function create3() {
+  if (cactus3.classList != "create3") {
+    cactus3.classList.add("create3");
+
+    setTimeout(function () {
+      cactus3.classList.remove("create3");
+    }, 5000);
+  }
+}
 // let isAlive = setInterval(function () {
 //   // get current dino Y position
 //   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
@@ -55,12 +66,11 @@ document.addEventListener("keypress", (event)=>{
   var code = event.code
   if (name === "r") {
     create1();
-
   }
   if (name === "t") {
     create2();
   }
+  if (name === "y"){
+    create3();
+  }
 });
-
-
-
