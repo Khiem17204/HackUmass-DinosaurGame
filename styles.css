@@ -10,11 +10,13 @@
 }
 
 .game2{ 
-  width: 600px;
-  height: 200px;
+  width: 720px;
+  height: 240px;
   border: 1px solid black;
   position: relative;
-  margin: 15% 30% 0 30%;
+  margin: 15% 28% 0 28%;
+  background-image: url(img/background1.gif);
+  background-size: 720px 240px;
 }
 
 
@@ -33,7 +35,7 @@
     background-image: url(img/walk2.png);
     background-size: 50px 50px;
     position: relative;
-    top: 150px;
+    top: 190px;
   }
 .jump {
     animation: jump 0.3s linear;
@@ -94,6 +96,7 @@
 
   background-image: url("img/obstacle.png");
   background-size: 100px 100px;
+  background-position: 30%;
 }
 
 .create {
@@ -113,8 +116,50 @@
       margin: 14% 100%;
     }
   
-    100% {
+    100% {  
       margin: 14% -5%;
     }
   }
+
+#anya {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 14% 100%;
+  
+    background-image: url("img/skill1.gif");
+    background-size: 100px 100px;
+  
+    /* animation: block 100s infinite linear; */
+}
+
+#anya2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 14% 100%;
+
+  background-image: url("img/skill2.gif");
+  background-size: 100px 100px;
+
+  /* animation: block 100s infinite linear; */
+}
+
+#anya3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 14% 100%;
+
+  background-image: url("img/obstacle.png");
+  background-size: 100px 100px;
+
+  /* animation: block 100s infinite linear; */
+}
+
+
+
+
+
+
 
