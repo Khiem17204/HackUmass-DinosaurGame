@@ -1,10 +1,8 @@
 const dino = document.getElementById("dino");
 const obs = document.getElementById("obs");
 const obs2 = document.getElementById("obs2");
-const obs3 = document.getElementById("obs3");
 const anya = document.getElementById("anya");
 const anya2 = document.getElementById("anya2");
-const anya3 = document.getElementById("anya3");
 
 
 function jump() {
@@ -14,6 +12,8 @@ function jump() {
     setTimeout(function () {
       dino.classList.remove("jump");
     }, 2000);
+  
+  
   }
 }
 
@@ -24,7 +24,7 @@ function create1() {
 
     setTimeout(function () {
       obs.classList.remove("create");
-    }, 10000);
+    }, 3000);
   }
 }
 
@@ -34,19 +34,11 @@ function create2() {
 
     setTimeout(function () {
       obs2.classList.remove("create2");
-    }, 5000);
+    }, 2500);
   }
 }
 
-function create3() {
-  if (obs3.classList != "create3") {
-    obs3.classList.add("create3");
 
-    setTimeout(function () {
-      obs3.classList.remove("create3");
-    }, 2000);
-  }
-}
 // let isAlive = setInterval(function () {
 //   // get current dino Y position
 //   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
@@ -64,32 +56,22 @@ function create3() {
 // }, 10);
 function create4() {
 
-  if (anya.classList != "create") {
-    anya.classList.add("create");
+  if (anya.classList != "create4") {
+    anya.classList.add("create4");
 
     setTimeout(function () {
-      anya.classList.remove("create");
-    }, 10000);
+      anya.classList.remove("create4");
+    }, 3000);
   }
 }
 
 function create5() {
-  if (anya2.classList != "create2") {
-    anya2.classList.add("create2");
+  if (anya2.classList != "create5") {
+    anya2.classList.add("create5");
 
     setTimeout(function () {
-      anya2.classList.remove("create2");
-    }, 5000);
-  }
-}
-
-function create6() {
-  if (anya3.classList != "create3") {
-    anya3.classList.add("create3");
-
-    setTimeout(function () {
-      anya3.classList.remove("create3");
-    }, 2000);
+      anya2.classList.remove("create5");
+    }, 2500);
   }
 }
 
@@ -103,16 +85,13 @@ document.addEventListener("keypress", (event)=>{
   if (name === "r") {
     create2();
   }
-  if (name === "t"){
-    create3();
-  }
   if (name === "i"){
     create4();
   }
   if (name ==="o"){
     create5()
   }
-  if (name ==="p"){
-    create6()
+  if (name ==='x'){
+    jump()
   }
 });

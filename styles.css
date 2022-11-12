@@ -21,12 +21,12 @@
 
 
 #dino {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-image: url(img/walk1.png);
-    background-size: 50px 50px;
+    background-size: 75px 75px;
     position: relative;
-    top: 190px;
+    top: 165px;
   }
 
 #dino2 {
@@ -38,36 +38,37 @@
     top: 190px;
   }
 .jump {
-    animation: jump 0.3s linear;
+    animation: jump 2s linear;
   }
   
   @keyframes jump {
     0% {
-      top: 150px;
+      top: 165px;
     }
   
-    30% {
-      top: 130px;
+    25% {
+      top: 117.5px;
     }
   
     50% {
-      top: 80px;
+      top: 70px;
     }
   
-    80% {
-      top: 130px;
+    75% {
+      top: 117.5px;
     }
   
     100% {
-      top: 150px;
+      top: 165px;
     }
   }
+    
 
 #obs {
     width: 100px;
     height: 100px;
     position: absolute;
-    margin: 14% 100%;
+    margin: 10% 100%;
   
     background-image: url("img/skill1.gif");
     background-size: 100px 100px;
@@ -79,7 +80,7 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    margin: 14% 100%;
+    margin: 10% 100%;
 
     background-image: url("img/skill2.gif");
     background-size: 100px 100px;
@@ -87,39 +88,40 @@
     /* animation: block 100s infinite linear  ; */
 }
 
-#obs3{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 14% 100%;
-
-
-  background-image: url("img/obstacle.png");
-  background-size: 100px 100px;
-  background-position: 30%;
-}
-
 .create {
-    animation: block 10s linear;
+    animation: block 3s linear;
 }
 
 .create2 {
-    animation: block 5s linear;
+    animation: block 2.5s linear;
 }
 
-.create3 {
-    animation: block 2s linear;
+.create4 {
+  animation: block2 3s linear;
+}
+
+.create5 {  
+  animation: block2 2s linear;
 }
 
 @keyframes block {
     0% {
-      margin: 14% 100%;
+      margin: 10% 100%;
     }
   
     100% {  
-      margin: 14% -5%;
+      margin: 10% -5%;
     }
   }
+
+@keyframes block2 {
+    0% {
+      margin: 13.5% 100%;
+    }
+    100%{
+      margin: 13.5% -5%;
+    }
+}
 
 #anya {
     width: 100px;
@@ -140,18 +142,6 @@
   margin: 14% 100%;
 
   background-image: url("img/skill2.gif");
-  background-size: 100px 100px;
-
-  /* animation: block 100s infinite linear; */
-}
-
-#anya3 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 14% 100%;
-
-  background-image: url("img/obstacle.png");
   background-size: 100px 100px;
 
   /* animation: block 100s infinite linear; */
