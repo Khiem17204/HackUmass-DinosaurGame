@@ -1,4 +1,5 @@
 const dino = document.getElementById("dino");
+const dino2 = document.getElementById("dino2");
 const obs = document.getElementById("obs");
 const obs2 = document.getElementById("obs2");
 const anya = document.getElementById("anya");
@@ -54,6 +55,16 @@ function create2() {
 //     alert("Game Over!");
 //   }
 // }, 10);
+function jump2() {
+  if (dino2.classList != "jump") {
+    dino2.classList.add("jump");
+
+    setTimeout(function () {
+      dino2.classList.remove("jump");
+    }, 2000);
+  }
+}
+
 function create4() {
 
   if (anya.classList != "create4") {
@@ -79,19 +90,22 @@ function create5() {
 document.addEventListener("keypress", (event)=>{
   var name = event.key
   var code = event.code
-  if (name === "e") {
+  if (name === "i") {
     create1();
   }
-  if (name === "r") {
+  if (name === "o") {
     create2();
-  }
-  if (name === "i"){
-    create4();
-  }
-  if (name ==="o"){
-    create5()
   }
   if (name ==='x'){
     jump()
+  }
+  if (name ==='e'){
+    create4()
+  }
+  if (name ==='r'){
+    create5()
+  }
+  if (name === "/"){
+    jump2()
   }
 });
