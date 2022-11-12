@@ -1,4 +1,7 @@
-
+*{
+  background-image: url(img/bigback.jpg);
+  background-size: 100%;
+}
 .game {
     width: 720px;
     height: 240px;
