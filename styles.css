@@ -1,7 +1,9 @@
 *{
   background-image: url(img/bigback.jpg);
   background-size: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .game {
     width: 720px;
     height: 240px;

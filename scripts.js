@@ -52,7 +52,7 @@ let isAlive = setInterval(function () {
   // detect collision
   if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
     // collision
-    alert("Game Over!");
+    alert("Player 2 wins");
   }
 }, 10);
 
@@ -68,7 +68,7 @@ let isAlive1 = setInterval(function () {
   // detect collision
   if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
     // collision
-    alert("Game Over!");
+    alert("Player 2 wins");
   }
 }, 10);
 
@@ -117,7 +117,7 @@ let isAlive3 = setInterval(function () {
   // detect collision
   if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
     // collision
-    alert("Game Over!");
+    alert("Player 1 wins");
   }
 }, 10);
 
@@ -133,7 +133,7 @@ let isAlive4 = setInterval(function () {
   // detect collision
   if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
     // collision
-    alert("Game Over!");
+    alert("Player 1 wins");
   }
 }, 10);
 
