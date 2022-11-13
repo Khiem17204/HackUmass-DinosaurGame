@@ -15,7 +15,7 @@ function jump() {
     
     setTimeout(function () {
       dino.classList.remove("jump");
-    }, 2000);
+    }, 1500);
   
   
   }
@@ -83,7 +83,7 @@ function jump2() {
 
     setTimeout(function () {
       dino2.classList.remove("jump");
-    }, 2000);
+    }, 1500);
   }
 }
 

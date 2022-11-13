@@ -1,5 +1,5 @@
 *{
-  background-image: url(img/bigback.jpg);
+  background-image: url(img/testback.png);
   background-size: 100%;
   font-family: 'Montserrat', sans-serif;
 }
@@ -48,7 +48,7 @@
 }
 
 .jump {
-    animation: jump 2s linear;
+    animation: jump 1.5s linear;
   }
 
   @keyframes jump {
@@ -79,7 +79,7 @@
 }
   
 .jump2 {
-    animation: jump 2s linear;
+    animation: jump 1.5s linear;
   }
 
   @keyframes jump2 {
