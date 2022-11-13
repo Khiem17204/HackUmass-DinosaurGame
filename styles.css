@@ -76,7 +76,7 @@
       background-image: url('img/jump.png');
       top: 165px;
     }
-  }
+}
   
 .jump2 {
     animation: jump 2s linear;
