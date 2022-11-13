@@ -33,17 +33,17 @@
   }
 
 #dino2 {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-image: url(img/walk2.png);
-    background-size: 50px 50px;
+    background-size: 75px 75px;
     position: relative;
-    top: 190px;
+    top: 170px;
   }
 .jump {
     animation: jump 2s linear;
   }
-  
+
   @keyframes jump {
     0% {
       top: 165px;
@@ -65,8 +65,32 @@
       top: 165px;
     }
   }
-    
+  
+.jump2 {
+    animation: jump 2s linear;
+  }
 
+  @keyframes jump2 {
+    0% {
+      top: 165px;
+    }
+  
+    25% {
+      top: 117.5px;
+    }
+  
+    50% {
+      top: 70px;
+    }
+  
+    75% {
+      top: 117.5px;
+    }
+  
+    100% {
+      top: 165px;
+    }
+  }
 #obs {
     width: 100px;
     height: 100px;
@@ -130,7 +154,7 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    margin: 14% 100%;
+    margin: 10% 100%;
   
     background-image: url("img/skill1.gif");
     background-size: 100px 100px;
@@ -142,7 +166,7 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  margin: 14% 100%;
+  margin: 10% 100%;
 
   background-image: url("img/skill2.gif");
   background-size: 100px 100px;
