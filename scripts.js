@@ -4,7 +4,10 @@ const obs = document.getElementById("obs");
 const obs2 = document.getElementById("obs2");
 const anya = document.getElementById("anya");
 const anya2 = document.getElementById("anya2");
+var myMusic = document.getElementById("music");
 
+myMusic.autoplay =true;
+myMusic.load;
 
 function jump() {
   if (dino.classList != "jump") {
@@ -159,3 +162,4 @@ document.addEventListener("keypress", (event)=>{
     jump2()
   }
 });
+
