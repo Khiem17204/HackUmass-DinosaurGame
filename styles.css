@@ -26,20 +26,62 @@
 #dino {
     width: 75px;
     height: 75px;
-    background-image: url(img/walk1.png);
     background-size: 75px 75px;
     position: relative;
     top: 165px;
+    animation: dino 0.7s infinite;
   }
 
+@keyframes dino {
+    0% {
+      background-image: url('img/walk1.png');
+    }
+    20% {
+      background-image: url('img/walk2.png');
+    }
+    40% {
+      background-image: url('img/walk3.png');
+    }
+    60% {
+      background-image: url('img/walk4.png');
+    }
+    80% {
+      background-image: url('img/walk5.png';)
+    }
+    100% {
+      background-image: url('img/walk6.png');
+    }
+}
 #dino2 {
     width: 75px;
     height: 75px;
-    background-image: url(img/walk2.png);
     background-size: 75px 75px;
     position: relative;
-    top: 170px;
+    top: 165px;
+    animation: dino2 0.7s infinite;
+}
+
+@keyframes dino2 {
+  0% {
+    background-image: url('img/walk1.png');
   }
+  20% {
+    background-image: url('img/walk2.png');
+  }
+  40% {
+    background-image: url('img/walk3.png');
+  }
+  60% {
+    background-image: url('img/walk4.png');
+  }
+  80% {
+    background-image: url('img/walk5.png';)
+  }
+  100% {
+    background-image: url('img/walk6.png');
+  }
+}
+
 .jump {
     animation: jump 2s linear;
   }
@@ -143,10 +185,10 @@
 
 @keyframes block2 {
     0% {
-      margin: 10% 100%;
+      margin: 13.5% 100%;
     }
     100%{
-      margin: 10% -5%;
+      margin: 13.5% -5%;
     }
 }
 
