@@ -143,10 +143,10 @@
 
 @keyframes block2 {
     0% {
-      margin: 13.5% 100%;
+      margin: 10% 100%;
     }
     100%{
-      margin: 13.5% -5%;
+      margin: 10% -5%;
     }
 }
 

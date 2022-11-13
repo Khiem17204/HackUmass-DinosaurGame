@@ -40,21 +40,40 @@ function create2() {
 }
 
 
-// let isAlive = setInterval(function () {
-//   // get current dino Y position
-//   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+let isAlive = setInterval(function () {
+  // get current dino Y position
+  let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
 
-//   // get current cactus X position
-//   let cactusLeft = parseInt(
-//     window.getComputedStyle(cactus).getPropertyValue("left")
-//   );
+  // get current cactus X position
+  let obsLeft = parseInt(
+    window.getComputedStyle(obs).getPropertyValue("margin-right")
+  );
 
-//   // detect collision
-//   if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-//     // collision
-//     alert("Game Over!");
-//   }
-// }, 10);
+  // detect collision
+  if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
+    // collision
+    alert("Game Over!");
+  }
+}, 10);
+
+let isAlive1 = setInterval(function () {
+  // get current dino Y position
+  let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+
+  // get current cactus X position
+  let obsLeft = parseInt(
+    window.getComputedStyle(obs2).getPropertyValue("margin-right")
+  );
+
+  // detect collision
+  if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
+    // collision
+    alert("Game Over!");
+  }
+}, 10);
+
+
+
 function jump2() {
   if (dino2.classList != "jump") {
     dino2.classList.add("jump");
@@ -86,6 +105,37 @@ function create5() {
   }
 }
 
+let isAlive3 = setInterval(function () {
+  // get current dino Y position
+  let dinoTop = parseInt(window.getComputedStyle(dino2).getPropertyValue("top"));
+
+  // get current cactus X position
+  let obsLeft = parseInt(
+    window.getComputedStyle(anya).getPropertyValue("margin-right")
+  );
+
+  // detect collision
+  if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
+    // collision
+    alert("Game Over!");
+  }
+}, 10);
+
+let isAlive4 = setInterval(function () {
+  // get current dino Y position
+  let dinoTop = parseInt(window.getComputedStyle(dino2).getPropertyValue("top"));
+
+  // get current cactus X position
+  let obsLeft = parseInt(
+    window.getComputedStyle(anya2).getPropertyValue("margin-right")
+  );
+
+  // detect collision
+  if (obsLeft<60 && obsLeft > 0 && dinoTop >= 155) {
+    // collision
+    alert("Game Over!");
+  }
+}, 10);
 
 document.addEventListener("keypress", (event)=>{
   var name = event.key
