@@ -4,10 +4,8 @@ const obs = document.getElementById("obs");
 const obs2 = document.getElementById("obs2");
 const anya = document.getElementById("anya");
 const anya2 = document.getElementById("anya2");
-var myMusic = document.getElementById("music");
+var myMusic = new Audio("/img/song.mp3");
 
-myMusic.autoplay =true;
-myMusic.load;
 
 function jump() {
   if (dino.classList != "jump") {
@@ -16,13 +14,10 @@ function jump() {
     setTimeout(function () {
       dino.classList.remove("jump");
     }, 1500);
-  
-  
   }
 }
 
 function create1() {
-
   if (obs.classList != "create") {
     obs.classList.add("create");
 
@@ -144,22 +139,30 @@ document.addEventListener("keypress", (event)=>{
   var name = event.key
   var code = event.code
   if (name === "i") {
+    myMusic.play();
     create1();
   }
   if (name === "o") {
     create2();
+    myMusic.play();
+
   }
   if (name ==='x'){
-    jump()
+    jump();
+    myMusic.play();
   }
   if (name ==='e'){
-    create4()
+    myMusic.play();
+    create4();
   }
   if (name ==='r'){
-    create5()
+    myMusic.play();
+    create5();
   }
   if (name === "/"){
-    jump2()
+    myMusic.play();
+    jump2();
   }
 });
+
 

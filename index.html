@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rise of Anya</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <audio id="music" loop="loop" controls hidden = "True">
-      <source src= "img/song.mp3"  type="audio/mpeg">
-    </audio>
+    <audio id="music" loop="loop" preload="auto" autoplay src="/img/song.mp3"></audio>
     <div class="game"> 
       <div id="dino"></div>
       <div>
@@ -30,6 +25,10 @@
     </div>
 
     </body>
-    <script src="scripts.js"></script>
+    <script src="scripts.js" type="text/javascript">
+      window.onload = function(){
+        document.getElementById("music").play();
+}
+    </script>
   </body>
 </html>
