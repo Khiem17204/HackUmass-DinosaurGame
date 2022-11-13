@@ -12,7 +12,7 @@ myMusic.load;
 function jump() {
   if (dino.classList != "jump") {
     dino.classList.add("jump");
-
+    
     setTimeout(function () {
       dino.classList.remove("jump");
     }, 2000);
