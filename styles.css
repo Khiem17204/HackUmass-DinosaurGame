@@ -31,57 +31,20 @@
     background-size: 75px 75px;
     position: relative;
     top: 165px;
-    animation: dino 0.7s infinite;
+    /* animation: dino 0.7s infinite; */
+    background-image: url("img/download.png");
+    
   }
 
-@keyframes dino {
-    0% {
-      background-image: url('img/walk1.png');
-    }
-    20% {
-      background-image: url('img/walk2.png');
-    }
-    40% {
-      background-image: url('img/walk3.png');
-    }
-    60% {
-      background-image: url('img/walk4.png');
-    }
-    80% {
-      background-image: url('img/walk5.png');
-    }
-    100% {
-      background-image: url('img/walk6.png');
-    }
-}
 #dino2 {
     width: 75px;
     height: 75px;
     background-size: 75px 75px;
     position: relative;
     top: 165px;
-    animation: dino2 0.7s infinite;
-}
-
-@keyframes dino2 {
-  0% {
-    background-image: url('img/walk1.png');
-  }
-  20% {
-    background-image: url('img/walk2.png');
-  }
-  40% {
-    background-image: url('img/walk3.png');
-  }
-  60% {
-    background-image: url('img/walk4.png');
-  }
-  80% {
-    background-image: url('img/walk5.png');
-  }
-  100% {
-    background-image: url('img/walk6.png');
-  }
+    background-image: url("img/download.png");
+    /* animation: dino2 0.7s infinite; */
+    
 }
 
 .jump {
@@ -90,22 +53,27 @@
 
   @keyframes jump {
     0% {
+      background-image: url('img/jump.png');
       top: 165px;
     }
   
     25% {
+      background-image: url('img/jump.png');
       top: 117.5px;
     }
   
     50% {
+      background-image: url('img/jump.png');
       top: 70px;
     }
   
     75% {
+      background-image: url('img/jump.png');
       top: 117.5px;
     }
   
     100% {
+      background-image: url('img/jump.png');
       top: 165px;
     }
   }
@@ -116,22 +84,27 @@
 
   @keyframes jump2 {
     0% {
+      background-image: url('img/jump.png');
       top: 165px;
     }
   
     25% {
+      background-image: url('img/jump.png');
       top: 117.5px;
     }
   
     50% {
+      background-image: url('img/jump.png');
       top: 70px;
     }
   
     75% {
+      background-image: url('img/jump.png');
       top: 117.5px;
     }
   
     100% {
+      background-image: url('img/jump.png');
       top: 165px;
     }
   }
